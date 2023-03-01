@@ -1,0 +1,270 @@
+*
+
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+}
+body
+{
+   background-image:url(fond.jpg);
+   background-repeat: no-repeat;
+   font-family: "Roboto", sans-serif;
+   color: #ffff
+   
+}
+a{
+  color: #ffff
+}
+header
+{
+  
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+ 
+  
+  align-items: center;
+  justify-content: space-between;
+  
+
+  background: transparent;
+  padding: 25px 15px ;
+  transition-duration: .3s;
+  
+}
+#Portfolio{
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 1px ;
+    padding-left: 10%;
+   
+  }
+  .nav-links{
+     display: flex;
+  }
+  .nav-links li{
+    position: relative;
+    list-style-type: none;
+  }
+  .nav-links a{
+    text-decoration: none;
+      color: white;
+      font-weight: bold;
+      font-size: 1rem;
+      padding: 10px 20px;
+    }
+    .nav-links a::after{
+      position: absolute;
+      width: 0;
+      height: 2px;
+      background-color: #ffff;
+      left: 0;
+      bottom: -4px;
+      transition: ease .40s;
+    }
+    .nav-links a:hover::after{
+      width: 100%;
+    }
+    
+.bars
+{
+  margin-left: 5%;
+  width: 35px;
+  height: 35px;
+  display: none;
+}
+span
+{
+  color: #862A2A;
+}
+h1 
+{
+  margin-left: 40%;
+  margin-top: 10%;
+  color: #862A2A;
+  font-size: 50px;
+}
+.bas span{
+  color: #fff;
+}
+.bas
+{
+ position: relative;
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ padding-bottom: 2%;
+}
+.bas-left
+{
+  position: relative;
+  padding-left: 40%;
+  font-size: 25px;
+  padding-top: 15%;
+  color: white;
+}
+
+.formulaire
+{ 
+ margin-left: 15%;
+  margin-top: 15%;
+  width: 70%;
+  line-height: 65px;
+}
+.formulaire input
+{
+  background-color: rgba(176, 77, 74, 0.541);
+ border-radius: 5px;
+ width: 55%;
+height: 40px;
+outline: none;
+
+}
+.formulaire textarea
+{
+  border-radius: 5px;
+  width: 55%;
+  background-color: rgba(176, 77, 74, 0.541);
+  outline: none;
+  border: none;
+  margin-top: 15px;
+
+}
+form .envoi{
+  border-radius: 25px 25px;
+  width: 60%;
+}
+
+
+@media screen and (max-width:750px)
+{
+ header{
+  padding: 0;
+ }
+ header .bars{
+  display: block;
+ }
+ .nav-links{
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: rgba(78, 78, 190, 0.212);
+  backdrop-filter: blur(7px);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -100%;
+  transition: all 0.5s ease;
+ }
+ .mobile-menu{
+  margin-left: 0;
+ }
+ header ul{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+ header .nav-links li{
+  margin: 25px 0;
+  font-size: 1.2em;
+ }
+ header .bars{
+  position: absolute;
+  top: 20px;
+  left: 85%;
+ }
+ header #Portfolio{
+  padding-left: 25px;
+  padding-top: 18px;
+ }
+ h1{
+  font-size: 35px;
+  padding-top: 20%;
+  margin-right: 10%;
+ }
+ .bas{
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+ }
+ .bas-left{
+   
+  width: 100%;
+  padding-left: 82px;
+  margin-right: 0px;
+  font-size: 20px;
+ }
+.bas-right .formulaire input{
+  width: 20rem;
+  height: 40px;
+ 
+}
+.bas-right{
+  margin-left: 0px;
+  padding-left: 2px;
+ 
+  
+}
+.formulaire textarea{
+  width: 20rem;
+  height: 30vh;
+}
+}
+@media screen and (max-width:810px){
+ 
+ .bas-left{
+  margin-left: -15%;
+ }
+ .bas-right .formulaire input{
+  width: 15rem;
+ 
+ }
+  .formulaire textarea{
+
+    width: 15rem;
+  }
+  h1{
+    padding-left: 0px;
+    font-size: 40px;
+    text-align: center;
+   
+    margin-left: 0px;
+ }
+  
+}
+@media screen and (min-width:412px){
+  h1{
+     font-size: 30px;
+    
+  }
+  .formulaire textarea{
+    height: 100px;
+  }
+  button{
+   width: 50%;
+  }
+  .bars{
+    margin-right: 10px;
+  }
+  .bas-right{
+    margin-left: 0px;
+    padding-left: 2px;
+    
+  }
+}
+@media screen and (min-width:415px){
+  h1{
+    font-size: 30px;
+    
+  }
+  
+}
+
